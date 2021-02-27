@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+  # First one we start in our application
+
+eureka:
+  client:
+    register-with-eureka: false   # We dont need to register or service with eureka
+    fetch-registry: false         # This is our own server so we dont need to go to eureka for the registry
